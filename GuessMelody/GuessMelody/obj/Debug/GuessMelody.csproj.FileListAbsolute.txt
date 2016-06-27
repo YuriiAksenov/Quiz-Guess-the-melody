@@ -1,1 +1,10 @@
 F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\GuessMelody.exe.config
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\GuessMelody.exe
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\GuessMelody.pdb
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.csprojResolveAssemblyReference.cache
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.fMain.resources
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.fParam.resources
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.Properties.Resources.resources
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.csproj.GenerateResource.Cache
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.exe
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.pdb

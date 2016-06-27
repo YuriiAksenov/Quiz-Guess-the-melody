@@ -53,6 +53,7 @@
             this.btnParametres.TabIndex = 1;
             this.btnParametres.Text = "Настройки";
             this.btnParametres.UseVisualStyleBackColor = true;
+            this.btnParametres.Click += new System.EventHandler(this.btnParametres_Click);
             // 
             // btnExit
             // 
