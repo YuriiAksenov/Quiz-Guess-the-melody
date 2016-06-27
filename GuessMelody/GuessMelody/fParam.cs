@@ -34,6 +34,8 @@ namespace GuessMelody
             if(folderBrowserDialog.ShowDialog()==DialogResult.OK)
             {
                 string[] music_list = System.IO.Directory.GetFiles(folderBrowserDialog.SelectedPath,"*.mp3", cbAllDirecory.Checked? System.IO.SearchOption.AllDirectories: System.IO.SearchOption.TopDirectoryOnly);
+                Victorina.list.Clear();
+                Victorina.list.AddRange(music_list);
                 listBox1.Items.Clear();
                 listBox1.Items.AddRange(music_list);
             }
