@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace GuessMelody
 {
-    public partial class Form1 : Form
+    public partial class fMain : Form
     {
-        public Form1()
+        public fMain()
         {
             InitializeComponent();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
