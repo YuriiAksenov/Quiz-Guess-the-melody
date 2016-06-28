@@ -8,3 +8,6 @@ F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.
 F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.csproj.GenerateResource.Cache
 F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.exe
 F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.pdb
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\Interop.WMPLib.dll
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\AxInterop.WMPLib.dll
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.csproj.ResolveComReference.cache
