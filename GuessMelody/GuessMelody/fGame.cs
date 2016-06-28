@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace GuessMelody
 {
@@ -102,8 +103,9 @@ namespace GuessMelody
                 GamePause();
                 fMessage fm = new fMessage();
                 fm.lblMessage.Text = "Игрок 1";
-
-                if (fm.ShowDialog()==DialogResult.Yes)
+                //SoundPlayer sp = new SoundPlayer("Resources\\Windows_Background.wav");
+                //sp.PlaySync();
+                    if (fm.ShowDialog()==DialogResult.Yes)
                 {
                     lblCounter1.Text = Convert.ToString(Convert.ToInt32(lblCounter1.Text)+1);
                     MakeMusic();
@@ -115,6 +117,8 @@ namespace GuessMelody
                 GamePause();
                 fMessage fm = new fMessage();
                 fm.lblMessage.Text = "Игрок 2";
+                //SoundPlayer sp = new SoundPlayer("Resources\\Windows_Foreground.wav");
+                //sp.PlaySync();
 
                 if (fm.ShowDialog() == DialogResult.Yes)
                 {

@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMessage));
             this.lblMessage = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblTimer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblMessage
@@ -66,17 +69,35 @@
             this.button2.Text = "Нет";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblTimer
+            // 
+            this.lblTimer.AutoSize = true;
+            this.lblTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblTimer.Location = new System.Drawing.Point(174, 127);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(39, 42);
+            this.lblTimer.TabIndex = 3;
+            this.lblTimer.Text = "0";
+            // 
             // fMessage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::GuessMelody.Properties.Resources.zwalls_ru_4310;
             this.ClientSize = new System.Drawing.Size(385, 296);
+            this.Controls.Add(this.lblTimer);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblMessage);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fMessage";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fMessage_FormClosed);
+            this.Load += new System.EventHandler(this.fMessage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,5 +107,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         public System.Windows.Forms.Label lblMessage;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblTimer;
     }
 }

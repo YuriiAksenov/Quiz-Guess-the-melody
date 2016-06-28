@@ -15,3 +15,6 @@ F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\Interop.WMPL
 F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\AxInterop.WMPLib.dll
 F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.fGame.resources
 F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.fMessage.resources
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\Resources\Windows_Background.wav
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\Resources\Windows_Foreground.wav
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\Resources\Windows_Ringout.wav
