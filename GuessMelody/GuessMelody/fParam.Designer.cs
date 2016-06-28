@@ -186,13 +186,11 @@
             // cbRandomStart
             // 
             this.cbRandomStart.AutoSize = true;
-            this.cbRandomStart.Checked = true;
-            this.cbRandomStart.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbRandomStart.Location = new System.Drawing.Point(9, 92);
             this.cbRandomStart.Name = "cbRandomStart";
-            this.cbRandomStart.Size = new System.Drawing.Size(172, 17);
+            this.cbRandomStart.Size = new System.Drawing.Size(232, 17);
             this.cbRandomStart.TabIndex = 4;
-            this.cbRandomStart.Text = "Случайное воспроизведение";
+            this.cbRandomStart.Text = "Воспрооизведение со случайного места";
             this.cbRandomStart.UseVisualStyleBackColor = true;
             // 
             // label3

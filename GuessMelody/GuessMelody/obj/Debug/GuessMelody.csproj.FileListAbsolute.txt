@@ -14,3 +14,4 @@ F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.
 F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\Interop.WMPLib.dll
 F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\AxInterop.WMPLib.dll
 F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.fGame.resources
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.fMessage.resources
