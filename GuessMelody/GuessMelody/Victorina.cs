@@ -13,15 +13,20 @@ namespace GuessMelody
         static public List<string> list = new List<string>(); // список песен
         static public int gameDuration = 60; // продожительность игры
         static public int musicDuration = 10;// продолжительность музыки
-        static bool randomStart = false;// откуда стартовать сначала или со случайного места 
+        static public bool randomStart = false;// откуда стартовать сначала или со случайного места 
         static public string lastFolder = "";// папка которую задаем когда выбираем папку
         static public bool allDirectories = false;// выбираем все папки или только верхние папки
         
         static public void ReadMusic() //считывает музыкальные файлы 
         {
-            string[] music_files = Directory.GetFiles(lastFolder,"*.mp3",allDirectories? SearchOption.AllDirectories:SearchOption.TopDirectoryOnly);
-            list.Clear();
-            list.AddRange(music_files);
+            try
+            {
+                string[] music_files = Directory.GetFiles(lastFolder, "*.mp3", allDirectories ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly);
+                list.Clear();
+                list.AddRange(music_files);
+            }
+            catch
+            { }
         }
         static string regKeyName = "Software\\MyCompanyName\\Victorina";
         public static void WriteParam()
