@@ -28,15 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fGame));
             this.WMP = new AxWMPLib.AxWindowsMediaPlayer();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPause = new System.Windows.Forms.Button();
-            this.btnResume = new System.Windows.Forms.Button();
+            this.btnContinue = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblCounter1 = new System.Windows.Forms.Label();
             this.lblCounter2 = new System.Windows.Forms.Label();
+            this.lblMelodyCoun = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.WMP)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,15 +76,16 @@
             this.btnPause.UseVisualStyleBackColor = true;
             this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
-            // btnResume
+            // btnContinue
             // 
-            this.btnResume.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnResume.Location = new System.Drawing.Point(334, 328);
-            this.btnResume.Name = "btnResume";
-            this.btnResume.Size = new System.Drawing.Size(200, 62);
-            this.btnResume.TabIndex = 3;
-            this.btnResume.Text = "Продолжение";
-            this.btnResume.UseVisualStyleBackColor = true;
+            this.btnContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnContinue.Location = new System.Drawing.Point(334, 328);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(200, 62);
+            this.btnContinue.TabIndex = 3;
+            this.btnContinue.Text = "Продолжение";
+            this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
             // label1
             // 
@@ -122,6 +127,29 @@
             this.lblCounter2.TabIndex = 7;
             this.lblCounter2.Text = "0";
             // 
+            // lblMelodyCoun
+            // 
+            this.lblMelodyCoun.AutoSize = true;
+            this.lblMelodyCoun.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblMelodyCoun.Location = new System.Drawing.Point(264, 80);
+            this.lblMelodyCoun.Name = "lblMelodyCoun";
+            this.lblMelodyCoun.Size = new System.Drawing.Size(31, 33);
+            this.lblMelodyCoun.TabIndex = 8;
+            this.lblMelodyCoun.Text = "0";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.BackColor = System.Drawing.SystemColors.Control;
+            this.progressBar1.Location = new System.Drawing.Point(12, 279);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(513, 23);
+            this.progressBar1.TabIndex = 9;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // fGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -129,11 +157,13 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(537, 400);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.lblMelodyCoun);
             this.Controls.Add(this.lblCounter2);
             this.Controls.Add(this.lblCounter1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnResume);
+            this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.btnPause);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.WMP);
@@ -141,6 +171,7 @@
             this.Name = "fGame";
             this.Text = "Игра";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fGame_FormClosed);
+            this.Load += new System.EventHandler(this.fGame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.WMP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -152,10 +183,13 @@
         private AxWMPLib.AxWindowsMediaPlayer WMP;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPause;
-        private System.Windows.Forms.Button btnResume;
+        private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblCounter1;
         private System.Windows.Forms.Label lblCounter2;
+        private System.Windows.Forms.Label lblMelodyCoun;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
