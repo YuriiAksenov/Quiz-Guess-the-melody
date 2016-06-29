@@ -18,3 +18,4 @@ F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\obj\Debug\GuessMelody.
 F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\Resources\Windows_Background.wav
 F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\Resources\Windows_Foreground.wav
 F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\Resources\Windows_Ringout.wav
+F:\Projects\Quiz-Guess-the-melody\GuessMelody\GuessMelody\bin\Debug\taglib-sharp.dll

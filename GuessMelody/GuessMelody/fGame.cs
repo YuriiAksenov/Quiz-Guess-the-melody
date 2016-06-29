@@ -33,7 +33,7 @@ namespace GuessMelody
                 musicDuration = Victorina.musicDuration;
                 int n = rnd.Next(0, Victorina.list.Count);
                 WMP.URL = Victorina.list[n];
-                Victorina.answer = System.IO.Path.GetFileNameWithoutExtension(WMP.URL);
+                Victorina.answer = WMP.URL;
                 //WMP.Ctlcontrols.play();
                 Victorina.list.RemoveAt(n);
                 lblMelodyCoun.Text = Victorina.list.Count.ToString();
