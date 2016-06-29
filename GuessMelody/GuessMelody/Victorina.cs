@@ -16,7 +16,8 @@ namespace GuessMelody
         static public bool randomStart = false;// откуда стартовать сначала или со случайного места 
         static public string lastFolder = "";// папка которую задаем когда выбираем папку
         static public bool allDirectories = false;// выбираем все папки или только верхние папки
-        
+        static public string answer = "";
+
         static public void ReadMusic() //считывает музыкальные файлы 
         {
             try

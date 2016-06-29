@@ -35,6 +35,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblTimer = new System.Windows.Forms.Label();
+            this.lblShowAnswer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblMessage
@@ -84,12 +85,24 @@
             this.lblTimer.TabIndex = 3;
             this.lblTimer.Text = "0";
             // 
+            // lblShowAnswer
+            // 
+            this.lblShowAnswer.AutoSize = true;
+            this.lblShowAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblShowAnswer.Location = new System.Drawing.Point(11, 172);
+            this.lblShowAnswer.Name = "lblShowAnswer";
+            this.lblShowAnswer.Size = new System.Drawing.Size(131, 20);
+            this.lblShowAnswer.TabIndex = 4;
+            this.lblShowAnswer.Text = "Показать ответ";
+            this.lblShowAnswer.Click += new System.EventHandler(this.lblShowAnswer_Click);
+            // 
             // fMessage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GuessMelody.Properties.Resources.zwalls_ru_4310;
             this.ClientSize = new System.Drawing.Size(385, 296);
+            this.Controls.Add(this.lblShowAnswer);
             this.Controls.Add(this.lblTimer);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -109,5 +122,6 @@
         public System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblTimer;
+        private System.Windows.Forms.Label lblShowAnswer;
     }
 }

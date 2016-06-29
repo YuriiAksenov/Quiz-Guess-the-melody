@@ -118,6 +118,7 @@
             this.lblCounter1.Size = new System.Drawing.Size(31, 33);
             this.lblCounter1.TabIndex = 6;
             this.lblCounter1.Text = "0";
+            this.lblCounter1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lblCounter1_MouseClick);
             // 
             // lblCounter2
             // 
@@ -128,6 +129,7 @@
             this.lblCounter2.Size = new System.Drawing.Size(31, 33);
             this.lblCounter2.TabIndex = 7;
             this.lblCounter2.Text = "0";
+            this.lblCounter2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lblCounter1_MouseClick);
             // 
             // lblMelodyCoun
             // 
